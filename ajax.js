@@ -1,5 +1,5 @@
 ///////// This module is used for fetching data from an API /////////////
-async function fetchGames() {
+export async function fetchGames() {
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/version-group/`);
         const data = await response.json();

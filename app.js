@@ -2,5 +2,4 @@
 
 import { fetchGames } from './ajax.js';
 
-
 fetchGames();
