@@ -39,6 +39,9 @@ body {
     text-align: center;
 }
 
+.mainContainer {
+    margin-top: 10em
+}
 
 .gamesContainer1 {
     background-color: rgb(119, 151, 64);
@@ -52,6 +55,21 @@ body {
     top: 140px;
     bottom: 0;
     width: 150px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgb(119, 151, 64);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgb(45, 58, 23);
+        border-radius: 10px;
+    }
 }
 
 .gamesContainer2 {
@@ -68,3 +86,46 @@ body {
     width: 150px;
 }
 
+.forumField {
+    background-color: rgb(45, 58, 23);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    text-align: center;
+    width: 260px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+/* .forumContainer {
+    background-color: rgb(45, 58, 23);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 35px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+} */
+
+.gameDiv {
+    background-color: rgb(100, 132, 43);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
