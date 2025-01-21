@@ -1,4 +1,4 @@
-///////// This module is used for fetching data from an API /////////////
+///////// This module is used for fetching data from API's /////////////
  async function fetchGames() {
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/version-group/`);
@@ -40,14 +40,26 @@
 
 
 // MAKING DAT POST REQUEST
-const post = {
-    userId: 1,  
-    id: 1,
-    title: 'delectus aut autem',
-    body: 'quis ut nam facilis et officia qui',
-}
+
+
+const form = document.getElementById('createPost');
+
+const screenName = document.getElementById('screenName');
+const game = document.getElementById('game');  
+const review = document.getElementById('review');
+
+form.addEventListener('submit', createPost);
+
+
 
 async function createPost() {
+    const post = {
+        userId: screenName.value,  
+        id: 17,
+        title: game.value,
+        body: review.value,
+    };
+
     try {
         const OPTIONS = {
             method: 'POST',

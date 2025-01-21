@@ -1,6 +1,6 @@
 ///////// This module handles the core logic ///////////////
 
-import { fetchGames, fetchPokemon, createPost } from './ajax.js';
+import { fetchGames, fetchPokemon, createPost} from './ajax.js';
 // import { displayReview } from './dom.js';   
 // import * as DOM from './dom.js';
 fetchGames();
