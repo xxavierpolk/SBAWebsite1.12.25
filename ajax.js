@@ -1,4 +1,7 @@
 ///////// This module is used for fetching data from API's /////////////
+
+
+// This function fetches the games from the API
  async function fetchGames() {
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/version-group/`);
@@ -12,6 +15,9 @@
     }
 }
 
+
+// Fetching Pokemon for Search Bar functionality
+// DOES NOT FUNCTION PROPERLY for some reason but the idea is here. What's in place works.
  async function fetchPokemon() {
     try {
         
@@ -42,6 +48,7 @@
 // MAKING DAT POST REQUEST
 
 
+
 const form = document.getElementById('createPost');
 
 const screenName = document.getElementById('screenName');
@@ -51,7 +58,7 @@ const review = document.getElementById('review');
 form.addEventListener('submit', createPost);
 
 
-
+// successful post request will show in the console under network
 async function createPost() {
     const post = {
         userId: screenName.value,  

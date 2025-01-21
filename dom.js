@@ -8,7 +8,7 @@
 
     
 // }
-
+// This is to display the games on the left side of the page
 const gamesContainer1 = document.querySelector('.gamesContainer1'); 
 const gamesContainer2 = document.querySelector('.gamesContainer2');
 async function displayGames() {

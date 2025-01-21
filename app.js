@@ -8,6 +8,9 @@ fetchPokemon();
 createPost();
 // DOM.displayGames();
 
+
+
+// This is the function to display the games in the DOM
 const gamesContainer1 = document.querySelector('.gamesContainer1'); 
 const gamesContainer2 = document.querySelector('.gamesContainer2');
 async function displayGames() {
@@ -27,7 +30,7 @@ async function displayGames() {
     };
 };
 
-
+// This is to enable the view games button
 
 const viewGames = document.getElementById('viewGames');
 viewGames.addEventListener('click', displayGames);
